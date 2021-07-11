@@ -1,1 +1,1 @@
-# AI-Enabled-FinTech-B2B-Invoice-Management-Application
+# AI-Enabled FinTech B2B Invoice Management Application
