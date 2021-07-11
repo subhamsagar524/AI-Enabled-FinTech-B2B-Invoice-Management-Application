@@ -1,0 +1,784 @@
+/* For two responsive resolutions */
+@media only screen and (height: 1080px) {
+    html, body {
+        height: 1080px;
+    }
+}
+@media only screen and (height: 930px) {
+    html, body {
+        height: 930px;
+    }
+}
+
+/* Whole document styles */
+html, body {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/* Client's company logo and name */
+.company_logo {
+    top: 16px;
+    left: 30px;
+    width: 289px;
+    height: 52px;
+    opacity: 1;
+}
+
+/* Highradius copyright logo */
+.highradius_logo {
+    top: 22px;
+    left: 843px;
+    width: 235px;
+    height: 50px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+/* Grid head section Invoice List */
+.invoice_list {
+    top: 100px;
+    left: 30px;
+    width: 141px;
+    height: 31px;
+    text-align: left;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+/* Complete table part */
+.grid {
+    top: 160px;
+    left: 20px;
+    width: 1860px;
+    height: 739px;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+/* Table header */
+.grid_panel {
+    top: 179px;
+    left: 1126px;
+    width: 384px;
+    height: 67px;
+    opacity: 1;  
+}
+
+/* Handle due_date color */
+.due_red {
+	color: #FF5B5B !important;
+}
+
+/* Button css */
+button:enabled {
+	border: 1px solid #14AFF1;
+}
+
+button:disabled {
+	border: 1px solid #97A1A9;
+}
+
+/* Add button */
+.add {
+    top: 190px;
+    left: 1126px;
+    width: 99px;
+    height: 45px;
+    border-radius: 10px;
+    opacity: 1;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    position: absolute;
+}
+
+.add_icon {
+    top: 16px;
+    left: 18px;
+    width: 14px;
+    height: 14px;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+.add_content {
+    top: 11px;
+    left: 42px;
+    width: 37px;
+    height: 23px;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    position: absolute;
+}
+
+/* Edit button */
+.edit {
+    top: 190px;
+    left: 1245px;
+    width: 102px;
+    height: 45px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    position: absolute;
+}
+
+.edit_icon {
+    top: 205px;
+    left: 1265px;
+    width: 16px;
+    height: 16px;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.edit_content {
+	top: 201px;
+	left: 1291px;
+	width: 36px;
+	height: 23px;
+	text-align: left;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #97A1A9;
+	opacity: 1;
+}
+
+/* Delete button */
+.delete {
+    top: 190px;
+    left: 1367px;
+    width: 123px;
+    height: 45px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    position: absolute;
+    opacity: 1;
+}
+
+.delete_icon {
+    top: 22px;
+    left: 10px;
+    width: 14px;
+    height: 2px;
+    background: #97A1A9 0% 0% no-repeat padding-box;
+    position: absolute;
+    opacity: 1;
+}
+
+.delete_content {
+    top: 201px;
+    left: 1409px;
+    width: 61px;
+    height: 23px;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0px;
+    color: #97A1A9;
+    opacity: 1;
+}
+
+/* Search button */
+.search {
+    top: 190px;
+    left: 1510px;
+    width: 340px;
+    height: 45px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 1;
+}
+
+.search_icon {
+    top: 9px;
+    left: 299px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    opacity: 1;
+}
+
+.search_content[value] {
+    top: 11px;
+    left: 15px;
+    width: 210px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 18px/21px Ubuntu;
+    letter-spacing: 0px;
+    color: #97A1A9;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 0px solid;
+    position: absolute;
+    opacity: 1;
+}
+
+/* Remove Input outline while focus */
+input:focus {
+    outline: none;
+}
+
+/* Table css starts here */
+table {
+    margin-top: 40px;
+    margin-left: 40px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font: normal normal normal 18px/21px Ubuntu;
+    letter-spacing: 0px;
+    color: #97A1A9;
+    opacity: 1;
+}
+
+.table_head {
+    background: #273D49CC 0% 0% no-repeat padding-box !important;
+}
+
+.heading {
+    text-align: left;
+    font: normal normal normal 18px/21px Ubuntu;
+    letter-spacing: 0px;
+    color: #97A1A9;
+    opacity: 1;
+    padding-right: 130px;
+}
+
+td {
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-right: 50px;
+    height: 50px;
+}
+
+.due_red {
+    color: #FF5B5B;
+}
+
+.checkbox_all {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 16px;
+	height: 16px;
+	opacity: 1;
+}
+
+tr:nth-child(even) {
+    background: #273D49CC 0% 0% no-repeat padding-box;
+}
+
+tr:nth-child(odd) {
+    background-color: #283A46;
+}
+
+/* For pagination navigation */
+#left_page {
+	top: 513px;
+	left: 20px;
+	width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+	background: #39495E 0% 0% no-repeat padding-box;
+	box-shadow: 0px 2px 6px #00000069;
+	opacity: 1;
+}
+
+#right_page {
+	top: 513px;
+	left: 1822px;
+	width: 55px;
+	height: 55px;
+    border-radius: 50%;
+    position: fixed;
+	background: #14AFF1 0% 0% no-repeat padding-box;
+	box-shadow: 0px 2px 6px #00000069;
+	opacity: 1;
+}
+
+.rcircle {
+	top: 530px;
+	left: 1839px;
+	height: 25px;
+	opacity: 1;
+	position: fixed;
+}
+
+.lcircle {
+	top: 530px;
+	left: 35px;
+	height: 25px;
+	opacity: 1;
+	position: fixed;
+}
+
+/* Modal styles */
+/* For add modal */
+.close {
+	top: 259px;
+	left: 1459px;
+	width: 24px;
+	height: 24px;
+	background: transparent url('../images/baseline-close-24px.svg') 0% 0% no-repeat padding-box;
+	opacity: 1;
+	position: inline-block;
+	float: right;
+}
+
+.modal_head_text {
+	top: 256px;
+	left: 437px;
+	width: 147px;
+	height: 31px;
+	text-align: left;
+	font: normal normal normal 28px/32px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	opacity: 1;
+}
+
+.split_form {
+	width: 50%;
+	float: left;
+}
+
+span {
+	color: #97A1A9;
+	text-align: left;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0.19px;
+	opacity: 1;
+	display:inline-block;
+	margin-top: 10px;
+}
+
+form {
+	overflow: hidden;
+}
+
+input {
+	float: right;
+	clear: both;
+	top: 347px;
+	left: 620px;
+	width: 300px;
+	height: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #FFFFFF;
+	font: normal normal normal 20px/24px Ubuntu;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+}
+
+.required label:after {
+	content:" *";
+	color: #FF5B5B;
+	display:inline;
+}
+
+.add_modal_head {
+	position: inline-block;
+	margin: 24px;
+	top: 226px;
+	left: 407px;
+	height: 91px;
+	border-color: #2A3E4C;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	border-radius: 10px 10px 0px 0px;
+	opacity: 1;
+}
+
+.add_modal_form {
+	position: fixed;
+	top: 302px;
+	height: 330px;
+	left: 407px;
+	width: 1060px;
+	margin: 24px;
+	border-color: #2A3E4C;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	border-radius: 10px 10px 0px 0px;
+	opacity: 1;
+}
+
+.add_modal_div {
+	display: none;
+	top: 226px;
+	left: 407px;
+	width: 1106px;
+	height: 509px;
+	border-color: #2A3E4C;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	box-shadow: 0px 8px 24px #00000029;
+	border-radius: 6px;
+	opacity: 1;
+	position: fixed;
+}
+
+.add_modal_content {
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0.19px;
+}
+
+.form_row {
+	padding-bottom: 40px;
+}
+
+.form_right {
+	padding-left: 60px;
+}
+
+.add_modal_foot {
+	position: fixed;
+	top: 632px;
+	margin: 24px;
+	border-color: #2A3E4C;
+	display: inline-block;
+}
+
+.notes_input {
+	height: 191px;
+}
+
+.cancel {
+	text-align: left;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #14AFF1;
+	opacity: 1;
+}
+
+.clear_modal {
+	top: 651px;
+	left: 1294px;
+	width: 87px;
+	height: 45px;
+	background-color: #2A3E4C;
+	border: 1px solid #14AFF1;
+	border-radius: 10px;
+	opacity: 1;
+	position: fixed;
+}
+
+.clear_modal_content {
+	top: 661px;
+	left: 1314px;
+	width: 47px;
+	height: 23px;
+	text-align: left;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.add_modal_button {
+	top: 651px;
+	left: 1406px;
+	width: 77px;
+	height: 45px;
+	background: #14AFF1 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	position: fixed;
+}
+
+.add_modal_button_content {
+	top: 676px;
+	left: 1426px;
+	width: 37px;
+	height: 23px;
+	text-align: left;
+	background: #14AFF1 0% 0% no-repeat padding-box;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+/* For edit modal */
+.edit_modal_div {
+	display: none;
+	top: 210px;
+	left: 689px;
+	width: 543px;
+	height: 511px;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	box-shadow: 0px 8px 24px #00000029;
+	border-radius: 6px;
+	opacity: 1;
+	position: fixed;
+}
+
+.edit_modal_head {
+	top: 210px;
+	left: 689px;
+	width: 492px;
+	height: 91px;
+	margin: 24px;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	border-radius: 10px 10px 0px 0px;
+	opacity: 1;
+	display: inline-block;
+}
+
+.edit_modal_content {
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0.19px;
+}
+
+.edit_close_span {
+	top: 243px;
+	left: 1100px;
+	width: 24px;
+	height: 24px;
+	background: transparent url('../images/baseline-close-24px.svg') 0% 0% no-repeat padding-box;
+	opacity: 1;
+	position: inline-block;
+	float: right;
+}
+
+.edit_modal_form {
+	margin: 24px;
+}
+
+.edit_notes_input {
+	top: 404px;
+	left: 883px;
+	width: 300px;
+	height: 171px;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+}
+
+.edit_modal_foot {
+	position: fixed;
+	top: 642px;
+	left: 740px;
+	width: 483px;
+	height: 67px;
+	margin-top: 10px;
+	opacity: 1;
+	display: inline-block;
+}
+
+.edit_clear_modal {
+	top: 652px;
+	left: 1003px;
+	width: 92px;
+	height: 45px;
+	text-align: center;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	border: 1px solid #14AFF1;
+	border-radius: 10px;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	color: #FFFFFF;
+	opacity: 1;
+	float: right;
+}
+
+.edit_modal_button {
+	top: 652px;
+	left: 1120px;
+	width: 82px;
+	height: 45px;
+	margin-left: 24px;
+	background: #14AFF1 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	float: right;
+}
+
+/* For delete modal */
+.delete_modal_div {
+	display: none;
+	top: 294px;
+	left: 654px;
+	width: 611px;
+	height: 342px;
+	background: #2A3F4D 0% 0% no-repeat padding-box;
+	box-shadow: 0px 8px 24px #00000029;
+	border-radius: 6px;
+	opacity: 1;
+	position: fixed;
+}
+
+.delete_modal_head {
+	top: 294px;
+	left: 654px;
+	width: 566px;
+	height: 61px;
+	margin: 24px;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	border-radius: 10px 10px 0px 0px;
+	opacity: 1;
+	display: inline-block;
+}
+
+.delete_modal_head_text {
+	top: 324px;
+	left: 684px;
+	width: 217px;
+	height: 31px;
+	text-align: left;
+	font: normal normal normal 28px/32px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.delete_modal_content {
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0.19px;
+}
+
+.delete_close_span {
+	top: 327px;
+	left: 1211px;
+	width: 24px;
+	height: 24px;
+	background: transparent url('../images/baseline-close-24px.svg') 0% 0% no-repeat padding-box;
+	opacity: 1;
+	position: inline-block;
+	float: right;
+}
+
+.delete_modal_main {
+	margin: 24px;
+}
+
+.delete_modal_main {
+	text-align: left;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #C0C6CA;
+}
+
+.delete_warn {
+	text-align: left;
+	font: normal normal medium 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #FF5E5E;
+}
+
+.delete_modal_foot {
+	left: 654px;
+	width: 611px;
+	height: 67px;
+	margin-top: 24px;
+	opacity: 1;
+	display: inline-block;
+}
+
+.delete_cancel {
+	top: 566px;
+	left: 1009px;
+	width: 100px;
+	height: 45px;
+	text-align: center;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+	background: #2C404E 0% 0% no-repeat padding-box;
+	border: 1px solid #14AFF1;
+	border-radius: 10px;
+	opacity: 1;
+	float: right;
+}
+
+.delete_modal_button {
+	top: 566px;
+	left: 1134px;
+	width: 101px;
+	height: 45px;
+	margin-left: 24px;
+	margin-right: 24px;
+	text-align: center;
+	font: normal normal normal 20px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	background: #14AFF1 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	float: right;
+}
+
+/* Search results not found */
+.not_found1 {
+	top: 536px;
+	left: 832px;
+	width: 257px;
+	height: 25px;
+	text-align: center;
+	font: normal normal normal 22px/28px Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	position: fixed;
+	opacity: 1;
+}
+
+.not_found_logo {
+	top: 482px;
+	left: 940px;
+	width: 39px;
+	height: 39px;
+	position: fixed;
+	background: transparent url('../images/error_outline-24px.svg') 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.not_found2 {
+	top: 576px;
+	left: 728px;
+	width: 464px;
+	height: 18px;
+	text-align: center;
+	font: normal normal normal 16px/24px Ubuntu;
+	letter-spacing: 0px;
+	color: #C0C6CA;
+	position: fixed;
+	opacity: 1;
+}
+
+.not_found_clear {
+	top: 624px;
+	left: 905px;
+	width: 113px;
+	height: 23px;
+	text-align: left;
+	font: normal normal normal 20px/32px Ubuntu;
+	letter-spacing: 0px;
+	color: #14AFF1;
+	position: fixed;
+	opacity: 1;
+}

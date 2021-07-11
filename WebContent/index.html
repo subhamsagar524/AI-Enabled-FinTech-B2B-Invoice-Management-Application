@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Products - Invoice Management System</title>
+
+    <!-- Linking JS libraries -->
+	<script src="./dist/jquery-3.6.0.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Linking CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="./dist/google_fonts_ubuntu.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Heading section of the website -->
+    <div class="head_section">
+        <img class="company_logo" src="./images/Group 20399.svg">
+        <img class="highradius_logo" src="./images/logo.svg">
+    </div>
+
+    <!-- Grid section of the website -->
+    <!-- Grid Head with Invoice List -->
+    <div class="grid_head">
+        <p class="invoice_list">Invoice List</p>
+    </div>
+
+    <!-- Grid panel head section -->
+    <div id="grid_id" class="grid">
+        <div class="grid_panel">
+
+            <!-- Add button -->
+            <button id="add_btn" class="add" type="button">
+                <img class="add_icon" src="./images/Path 18189.svg">
+                <text class="add_content">Add</text>
+            </button>
+
+            <!-- Edit button -->
+            <button id="edit_btn" class="edit" type="button" disabled>
+                <img class="edit_icon" src="./images/Path 18191.svg">
+                <text class="edit_content">&nbsp;Edit</text>
+            </button>
+
+            <!-- Delete button -->
+            <button id="delete_btn" class="delete" type="button" disabled>
+                <img class="delete_icon" src="./images/Path 18189-1.svg">
+                <text class="delete_content">&nbsp;&nbsp;Delete</text>
+            </button>
+
+            <!-- Search button -->
+            <div class="search">
+                <input id="searchbox_value" class="search_content" type="text" placeholder='Search by Invoice Number'">
+                <img id="search_btn" class="search_icon" src="./images/search-24px (3).svg">
+            </div>
+        </div>
+
+        <!-- Table contents starts here -->
+        <table id="main_table">
+            <thead>
+                <tr class="table_head">
+                    <th class="checkbox_all">
+                    	<input id="all_selected" value="1,2,3,4,5,6,7,8,9,10,11" type="checkbox" class="checkbox_all"/>
+                    </th>
+                    <th class="heading">Customer Name</th>
+                    <th class="heading">Customer #</th>
+                    <th class="heading">Invoice #</th>
+                    <th class="heading">Invoice Amount</th>
+                    <th class="heading">Due Date</th>
+                    <th class="heading">Predicted Payment Date</th>
+                    <th class="heading">Notes</th>
+                </tr>
+            </thead>
+        </table>
+        <!-- Pagination left and right div -->
+        <div id="left_page"><img class="lcircle" src="./images/left_arrow.png"></div>
+        <div id="right_page"><img class="rcircle" src="./images/right_arrow.png"></div>
+    </div>
+    
+    <!-- Add modal -->
+    <div id="add_modal" class="add_modal_div">
+    	<!-- Modal contents here -->
+    	<div class="add_modal_content">
+    		<div class="add_modal_head">
+	    		<span class="close"></span>
+	    		<p class="modal_head_text">Add Invoice<p>
+    		</div>
+    		<div class="add_modal_form">
+    			<form id="add_form_modal" class="add_form" method="post" action="http://localhost:8080/H2HBABBA1602/add_SQL_data.do">
+    				<div class="split_form">
+    					<div class="form_row required">
+    						<label>
+    							<span>Customer Name</span>
+    							<input name="name_customer", type="text" required>
+    						</label>
+    					</div>
+    					<div class="form_row required">
+    						<label>
+    							<span>Customer No.</span>
+    							<input name="cust_number", type="text" required>
+    						</label>
+    					</div>
+    					<div class="form_row required">
+    						<label>
+    							<span>Invoice No.</span>
+    							<input name="invoice_id", type="text" required>
+    						</label>
+    					</div>
+    					<div class="form_row required">
+    						<label>
+    							<span>Invoice Amount</span>
+    							<input name="total_open_amount", type="text" required>
+    						</label>
+    					</div>
+    				</div>
+    				
+    				<div class="split_form">
+    					<div class="form_row form_right required">
+    						<label>
+    							<span>Due Date</span>
+    							<input name="due_in_date", type="date" required>
+    						</label>
+    					</div>
+    					<div class="form_row form_right">
+    						<label>
+    							<span>Notes</span>
+    							<input class="notes_input" name="notes", type="text">
+    						</label>
+    					</div>
+    				</div>
+	    		</div>
+	    		<div class="add_modal_foot">
+	    			<text id="cancel_modal" class="cancel">Cancel</text>
+	    			<button id="clear_model_button" class="clear_modal" type="button"><text class="clear_modal_content">Clear</text></button>
+	    			<button id="add_modal_button_id" class="add_modal_button" type="button"><text class="clear_modal_content">Add</text></button>
+	    		</div>
+	    	</form>
+    	</div>
+    </div>
+    
+    <!-- Edit modal -->
+    <div id="edit_modal" class="edit_modal_div">
+    	<div class="edit_modal_content">
+			<div class="edit_modal_head">
+	    		<span id="edit_close" class="edit_close_span"></span>
+	    		<p class="modal_head_text">Edit Invoice<p>
+    		</div>
+    		<div class="edit_modal_form">
+    			<div class="form_row">
+    				<label>
+    					<span>Invoice Amount</span>
+    					<input id="edit_invoice" name="total_open_amount", type="text">
+    				</label>
+    			</div>
+    				
+    			<div class="form_row">
+    				<label>
+    					<span>Notes</span>
+    					<input id="edit_notes" class="edit_notes_input" name="notes", type="text">
+    				</label>
+    			</div>
+    		</div>
+
+    		<div class="edit_modal_foot">
+    			<text id="edit_cancel_modal" class="cancel">Cancel</text>
+    			<button id="edit_modal_button_id" class="edit_modal_button" type="button"><text class="clear_modal_content">Save</text></button>
+    			<button id="edit_clear_model_button" class="edit_clear_modal" type="button"><text class="clear_modal_content">Reset</text></button>
+    		</div>
+    	</div>
+    </div>
+    
+    <!-- Delete modal -->
+    <div id="delete_modal" class="delete_modal_div">
+    	<div class="delete_modal_content">
+			<div class="delete_modal_head">
+	    		<span id="delete_close" class="delete_close_span"></span>
+	    		<p class="delete_modal_head_text">Delete record(s)?<p>
+    		</div>
+    		<div class="delete_modal_main">
+    			<p class="delete_model_p1"> You'll lose your record(s) after this action. 
+    			We can't recover them once you delete. </p>
+    			<p class="delete_model_p2"> Are you sure you want to <text class="delete_warn">permanently delete </text> them?</p>
+    		</div>
+
+    		<div class="delete_modal_foot">
+    			<button id="delete_modal_button_id" class="delete_modal_button" type="button">Delete</button>
+    			<button id="delete_cancel_modal" class="delete_cancel">Cancel</text>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
